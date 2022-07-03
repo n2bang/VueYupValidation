@@ -15,14 +15,13 @@
 			};
 		},
 		name: "vue-yup-validation",
+		emits: [
+			'submit'
+		],
 		props: {
 			schema: {
 				required: true,
 				type: Object,
-			},
-			onSubmit: {
-				required: true,
-				type: Function,
 			},
 			values: {
 				required: true,
@@ -61,7 +60,7 @@
 			},
 			async submit() {
 				if (await this.validateForm()) {
-					this.onSubmit(this.values);
+					this.$emmit('submit', this.values);
 				}
 			},
 		},

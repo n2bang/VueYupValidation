@@ -1,7 +1,7 @@
 <template>
 	<vue-yup-validation
 		:schema="schema"
-		:onSubmit="submit"
+		@submit="submit"
 		:values="values"
 		v-slot="{ errors }"
 	>
