@@ -7,10 +7,10 @@ Uma simples integração do Yup com vue 3
 ## Instalação
 
 ```bash
-   npm install vue-yup-validation
+   npm install vue-yup-validation --save
 ```
 
-## Como utilizar ?
+## Como utilizar em um componente
 
 ```vue
    <template>
@@ -72,5 +72,8 @@ Uma simples integração do Yup com vue 3
 	}
 </style>
 ```
+
+## License
+[MIT](http://opensource.org/licenses/MIT)
 
 
