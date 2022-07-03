@@ -1,11 +1,16 @@
 {
   "name": "vue-yup-validation",
-  "private": true,
-  "version": "0.0.0",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+  "version": "0.1",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/vue-yup-validation.umd.js",
+  "module": "./dist/vue-yup-validation.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-yup-validation.umd.js",
+      "require": "./dist/vue-yup-validation.es.js"
+    }
   },
   "dependencies": {
     "lodash": "^4.17.21",
