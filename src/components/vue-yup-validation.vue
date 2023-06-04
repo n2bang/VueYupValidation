@@ -60,7 +60,7 @@
 			},
 			async submit() {
 				if (await this.validateForm()) {
-					this.$emmit('submit', this.values);
+					this.$emit('submit', this.values);
 				}
 			},
 		},
